@@ -1,0 +1,11 @@
+trigger:
+  - main  # or any branch you want to trigger from
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - checkout: self
+
+  - script: echo "Hello from GitHub via Azure DevOps!"
+    displayName: 'Run a one-line script'
